@@ -4,6 +4,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import interrupt, Command
 
 from step1_evaluate import evaluate_player, PlayerEval
+from statsbomb_input import get_player_stats
 
 class GraphState(TypedDict):
     stats: dict
@@ -58,13 +59,15 @@ checkpointer = MemorySaver()
 graph = builder.compile(checkpointer=checkpointer)
 
 if __name__ == "__main__":
-    fake_stats = {
-    "player_id": 22, "minutes_played": 90, "pass_accuracy": 75.0,
-    "shots": 3, "goals": 1, "tackles": 2, "interceptions": 1, "duels_won": 4
-}
+    real_stats = get_player_stats(match_id=7531, player_name="Messi")
+    print("Fetched stats:", real_stats)
+#     fake_stats = {
+#     "player_id": 22, "minutes_played": 90, "pass_accuracy": 75.0,
+#     "shots": 3, "goals": 1, "tackles": 2, "interceptions": 1, "duels_won": 4
+# }
 
-    config = {"configurable" : {"thread_id": "player-17"}}
-    result = graph.invoke({"stats" : fake_stats}, config)
+    config = {"configurable" : {"thread_id": f"player-{real_stats['player_id']}"}}
+    result = graph.invoke({"stats" : real_stats}, config)
     print("First run result:", result)
 
     if "__interrupt__" in result:
