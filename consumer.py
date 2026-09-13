@@ -1,5 +1,8 @@
 import json
 from kafka import KafkaConsumer
+from step2_graph import graph
+from langgraph.types import Command
+
 
 consumer = KafkaConsumer(
     "player-events",
@@ -67,7 +70,17 @@ if __name__ == "__main__":
 
         print(f"Event #{event_count}: {event['event_type']}")
 
-        if event_count % 20 == 0:
-            print("\n---Snaphot after", event_count, "events---")
-            print(get_current_snapshot())
+        if event_count % 50 == 0:
+            snapshot = get_current_snapshot()
+            print("\n--- Evaluating after", event_count, "events ---")
+
+            config = {"configurable": {"thread_id": f"player-{snapshot['player_id']}"}}
+            result = graph.invoke({"stats": snapshot}, config)
+
+            if "__interrupt__" in result:
+                print("Manager review needed:", result["__interrupt__"])
+                decision = input("Enter manager decision (advance/reject): ")
+                result = graph.invoke(Command(resume=decision), config)
+
+            print("Result:", result.get("final_status"))
             print()
