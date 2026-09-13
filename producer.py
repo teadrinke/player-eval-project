@@ -2,6 +2,7 @@ import time
 import json
 from kafka import KafkaProducer
 from statsbombpy import sb
+import pandas as pd
 
 producer = KafkaProducer(
     bootstrap_servers="localhost:9092",
@@ -20,7 +21,7 @@ def stream_match_events(match_id:int, player_name: str, delay: float = 0.1):
             "player_id": int(row["player_id"]),
             "player": row["player"],
             "event_type": row["type"],
-            "pass_outcome": row.get("pass_outcome"),
+            "pass_outcome": row.get("pass_outcome") if pd.notna(row.get("pass_outcome")) else None,
             "shot_outcome": row.get("shot_outcome"),
             "duel_outcome": row.get("duel_outcome"),
         }
