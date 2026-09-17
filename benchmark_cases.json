@@ -1,0 +1,1402 @@
+[
+  {
+    "case_id": "case_001",
+    "stats": {
+      "player_id": 1,
+      "minutes_played": 90,
+      "pass_accuracy": 71.6,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 1,
+      "duels_won": 2
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_002",
+    "stats": {
+      "player_id": 2,
+      "minutes_played": 90,
+      "pass_accuracy": 77.9,
+      "shots": 10,
+      "goals": 0,
+      "tackles": 6,
+      "interceptions": 0,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_003",
+    "stats": {
+      "player_id": 3,
+      "minutes_played": 90,
+      "pass_accuracy": 36.1,
+      "shots": 3,
+      "goals": 0,
+      "tackles": 8,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_004",
+    "stats": {
+      "player_id": 4,
+      "minutes_played": 90,
+      "pass_accuracy": 75.6,
+      "shots": 6,
+      "goals": 1,
+      "tackles": 7,
+      "interceptions": 4,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_005",
+    "stats": {
+      "player_id": 5,
+      "minutes_played": 90,
+      "pass_accuracy": 82.6,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 6,
+      "interceptions": 2,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_006",
+    "stats": {
+      "player_id": 6,
+      "minutes_played": 90,
+      "pass_accuracy": 40.1,
+      "shots": 12,
+      "goals": 2,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_007",
+    "stats": {
+      "player_id": 7,
+      "minutes_played": 90,
+      "pass_accuracy": 36.3,
+      "shots": 5,
+      "goals": 2,
+      "tackles": 0,
+      "interceptions": 5,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_008",
+    "stats": {
+      "player_id": 8,
+      "minutes_played": 90,
+      "pass_accuracy": 64.9,
+      "shots": 6,
+      "goals": 0,
+      "tackles": 8,
+      "interceptions": 2,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_009",
+    "stats": {
+      "player_id": 9,
+      "minutes_played": 90,
+      "pass_accuracy": 70.2,
+      "shots": 5,
+      "goals": 1,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_010",
+    "stats": {
+      "player_id": 10,
+      "minutes_played": 90,
+      "pass_accuracy": 44.8,
+      "shots": 4,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_011",
+    "stats": {
+      "player_id": 11,
+      "minutes_played": 90,
+      "pass_accuracy": 48.1,
+      "shots": 10,
+      "goals": 2,
+      "tackles": 2,
+      "interceptions": 2,
+      "duels_won": 5
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_012",
+    "stats": {
+      "player_id": 12,
+      "minutes_played": 90,
+      "pass_accuracy": 43.6,
+      "shots": 4,
+      "goals": 0,
+      "tackles": 2,
+      "interceptions": 4,
+      "duels_won": 3
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_013",
+    "stats": {
+      "player_id": 13,
+      "minutes_played": 90,
+      "pass_accuracy": 40.6,
+      "shots": 6,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_014",
+    "stats": {
+      "player_id": 14,
+      "minutes_played": 90,
+      "pass_accuracy": 51.1,
+      "shots": 12,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 0,
+      "duels_won": 5
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_015",
+    "stats": {
+      "player_id": 15,
+      "minutes_played": 90,
+      "pass_accuracy": 56.1,
+      "shots": 1,
+      "goals": 0,
+      "tackles": 5,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_016",
+    "stats": {
+      "player_id": 16,
+      "minutes_played": 90,
+      "pass_accuracy": 62.5,
+      "shots": 10,
+      "goals": 3,
+      "tackles": 2,
+      "interceptions": 2,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_017",
+    "stats": {
+      "player_id": 17,
+      "minutes_played": 90,
+      "pass_accuracy": 46.0,
+      "shots": 8,
+      "goals": 2,
+      "tackles": 6,
+      "interceptions": 4,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_018",
+    "stats": {
+      "player_id": 18,
+      "minutes_played": 90,
+      "pass_accuracy": 53.5,
+      "shots": 2,
+      "goals": 2,
+      "tackles": 7,
+      "interceptions": 0,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_019",
+    "stats": {
+      "player_id": 19,
+      "minutes_played": 90,
+      "pass_accuracy": 86.0,
+      "shots": 2,
+      "goals": 2,
+      "tackles": 2,
+      "interceptions": 5,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_020",
+    "stats": {
+      "player_id": 20,
+      "minutes_played": 90,
+      "pass_accuracy": 68.8,
+      "shots": 6,
+      "goals": 3,
+      "tackles": 7,
+      "interceptions": 4,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_021",
+    "stats": {
+      "player_id": 21,
+      "minutes_played": 90,
+      "pass_accuracy": 93.1,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 8,
+      "interceptions": 2,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_022",
+    "stats": {
+      "player_id": 22,
+      "minutes_played": 90,
+      "pass_accuracy": 52.1,
+      "shots": 4,
+      "goals": 3,
+      "tackles": 2,
+      "interceptions": 3,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_023",
+    "stats": {
+      "player_id": 23,
+      "minutes_played": 90,
+      "pass_accuracy": 92.0,
+      "shots": 11,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 1,
+      "duels_won": 8
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_024",
+    "stats": {
+      "player_id": 24,
+      "minutes_played": 90,
+      "pass_accuracy": 89.3,
+      "shots": 10,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 4,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_025",
+    "stats": {
+      "player_id": 25,
+      "minutes_played": 90,
+      "pass_accuracy": 39.9,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 8,
+      "interceptions": 4,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_026",
+    "stats": {
+      "player_id": 26,
+      "minutes_played": 90,
+      "pass_accuracy": 68.9,
+      "shots": 7,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 2,
+      "duels_won": 4
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_027",
+    "stats": {
+      "player_id": 27,
+      "minutes_played": 90,
+      "pass_accuracy": 45.6,
+      "shots": 3,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 5,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_028",
+    "stats": {
+      "player_id": 28,
+      "minutes_played": 90,
+      "pass_accuracy": 83.0,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 2,
+      "interceptions": 5,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_029",
+    "stats": {
+      "player_id": 29,
+      "minutes_played": 90,
+      "pass_accuracy": 91.5,
+      "shots": 2,
+      "goals": 1,
+      "tackles": 8,
+      "interceptions": 4,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_030",
+    "stats": {
+      "player_id": 30,
+      "minutes_played": 90,
+      "pass_accuracy": 92.7,
+      "shots": 8,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 3,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_031",
+    "stats": {
+      "player_id": 31,
+      "minutes_played": 90,
+      "pass_accuracy": 72.2,
+      "shots": 7,
+      "goals": 3,
+      "tackles": 1,
+      "interceptions": 1,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_032",
+    "stats": {
+      "player_id": 32,
+      "minutes_played": 90,
+      "pass_accuracy": 34.2,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 0,
+      "duels_won": 1
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_033",
+    "stats": {
+      "player_id": 33,
+      "minutes_played": 90,
+      "pass_accuracy": 76.0,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 5
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_034",
+    "stats": {
+      "player_id": 34,
+      "minutes_played": 90,
+      "pass_accuracy": 34.6,
+      "shots": 3,
+      "goals": 2,
+      "tackles": 7,
+      "interceptions": 1,
+      "duels_won": 8
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_035",
+    "stats": {
+      "player_id": 35,
+      "minutes_played": 90,
+      "pass_accuracy": 38.6,
+      "shots": 9,
+      "goals": 3,
+      "tackles": 3,
+      "interceptions": 3,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_036",
+    "stats": {
+      "player_id": 36,
+      "minutes_played": 90,
+      "pass_accuracy": 42.4,
+      "shots": 1,
+      "goals": 1,
+      "tackles": 5,
+      "interceptions": 3,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_037",
+    "stats": {
+      "player_id": 37,
+      "minutes_played": 90,
+      "pass_accuracy": 60.4,
+      "shots": 11,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_038",
+    "stats": {
+      "player_id": 38,
+      "minutes_played": 90,
+      "pass_accuracy": 77.3,
+      "shots": 12,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 1,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_039",
+    "stats": {
+      "player_id": 39,
+      "minutes_played": 90,
+      "pass_accuracy": 64.9,
+      "shots": 2,
+      "goals": 1,
+      "tackles": 2,
+      "interceptions": 2,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_040",
+    "stats": {
+      "player_id": 40,
+      "minutes_played": 90,
+      "pass_accuracy": 46.2,
+      "shots": 1,
+      "goals": 1,
+      "tackles": 8,
+      "interceptions": 0,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_041",
+    "stats": {
+      "player_id": 41,
+      "minutes_played": 90,
+      "pass_accuracy": 72.4,
+      "shots": 8,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 1,
+      "duels_won": 2
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_042",
+    "stats": {
+      "player_id": 42,
+      "minutes_played": 90,
+      "pass_accuracy": 56.4,
+      "shots": 7,
+      "goals": 1,
+      "tackles": 6,
+      "interceptions": 0,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_043",
+    "stats": {
+      "player_id": 43,
+      "minutes_played": 90,
+      "pass_accuracy": 54.6,
+      "shots": 6,
+      "goals": 2,
+      "tackles": 7,
+      "interceptions": 2,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_044",
+    "stats": {
+      "player_id": 44,
+      "minutes_played": 90,
+      "pass_accuracy": 75.3,
+      "shots": 11,
+      "goals": 3,
+      "tackles": 2,
+      "interceptions": 1,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_045",
+    "stats": {
+      "player_id": 45,
+      "minutes_played": 90,
+      "pass_accuracy": 44.2,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 5,
+      "interceptions": 0,
+      "duels_won": 0
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_046",
+    "stats": {
+      "player_id": 46,
+      "minutes_played": 90,
+      "pass_accuracy": 68.0,
+      "shots": 8,
+      "goals": 1,
+      "tackles": 0,
+      "interceptions": 4,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_047",
+    "stats": {
+      "player_id": 47,
+      "minutes_played": 90,
+      "pass_accuracy": 85.3,
+      "shots": 1,
+      "goals": 0,
+      "tackles": 3,
+      "interceptions": 3,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_048",
+    "stats": {
+      "player_id": 48,
+      "minutes_played": 90,
+      "pass_accuracy": 91.2,
+      "shots": 9,
+      "goals": 1,
+      "tackles": 0,
+      "interceptions": 4,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_049",
+    "stats": {
+      "player_id": 49,
+      "minutes_played": 90,
+      "pass_accuracy": 57.2,
+      "shots": 9,
+      "goals": 2,
+      "tackles": 4,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_050",
+    "stats": {
+      "player_id": 50,
+      "minutes_played": 90,
+      "pass_accuracy": 76.6,
+      "shots": 3,
+      "goals": 2,
+      "tackles": 6,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_051",
+    "stats": {
+      "player_id": 51,
+      "minutes_played": 90,
+      "pass_accuracy": 72.0,
+      "shots": 7,
+      "goals": 2,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_052",
+    "stats": {
+      "player_id": 52,
+      "minutes_played": 90,
+      "pass_accuracy": 70.4,
+      "shots": 9,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 4,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_053",
+    "stats": {
+      "player_id": 53,
+      "minutes_played": 90,
+      "pass_accuracy": 62.9,
+      "shots": 2,
+      "goals": 1,
+      "tackles": 1,
+      "interceptions": 1,
+      "duels_won": 5
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_054",
+    "stats": {
+      "player_id": 54,
+      "minutes_played": 90,
+      "pass_accuracy": 48.5,
+      "shots": 7,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 0,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_055",
+    "stats": {
+      "player_id": 55,
+      "minutes_played": 90,
+      "pass_accuracy": 83.1,
+      "shots": 4,
+      "goals": 0,
+      "tackles": 2,
+      "interceptions": 2,
+      "duels_won": 1
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_056",
+    "stats": {
+      "player_id": 56,
+      "minutes_played": 90,
+      "pass_accuracy": 87.8,
+      "shots": 11,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 2,
+      "duels_won": 9
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_057",
+    "stats": {
+      "player_id": 57,
+      "minutes_played": 90,
+      "pass_accuracy": 43.7,
+      "shots": 5,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 4,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_058",
+    "stats": {
+      "player_id": 58,
+      "minutes_played": 90,
+      "pass_accuracy": 46.3,
+      "shots": 0,
+      "goals": 0,
+      "tackles": 6,
+      "interceptions": 2,
+      "duels_won": 0
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_059",
+    "stats": {
+      "player_id": 59,
+      "minutes_played": 90,
+      "pass_accuracy": 30.2,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 1,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_060",
+    "stats": {
+      "player_id": 60,
+      "minutes_played": 90,
+      "pass_accuracy": 65.9,
+      "shots": 6,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 0,
+      "duels_won": 2
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_061",
+    "stats": {
+      "player_id": 61,
+      "minutes_played": 90,
+      "pass_accuracy": 65.5,
+      "shots": 5,
+      "goals": 1,
+      "tackles": 6,
+      "interceptions": 1,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_062",
+    "stats": {
+      "player_id": 62,
+      "minutes_played": 90,
+      "pass_accuracy": 50.0,
+      "shots": 12,
+      "goals": 0,
+      "tackles": 5,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_063",
+    "stats": {
+      "player_id": 63,
+      "minutes_played": 90,
+      "pass_accuracy": 46.2,
+      "shots": 1,
+      "goals": 1,
+      "tackles": 8,
+      "interceptions": 3,
+      "duels_won": 9
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_064",
+    "stats": {
+      "player_id": 64,
+      "minutes_played": 90,
+      "pass_accuracy": 78.7,
+      "shots": 3,
+      "goals": 1,
+      "tackles": 2,
+      "interceptions": 3,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_065",
+    "stats": {
+      "player_id": 65,
+      "minutes_played": 90,
+      "pass_accuracy": 41.7,
+      "shots": 5,
+      "goals": 3,
+      "tackles": 3,
+      "interceptions": 2,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_066",
+    "stats": {
+      "player_id": 66,
+      "minutes_played": 90,
+      "pass_accuracy": 81.2,
+      "shots": 1,
+      "goals": 1,
+      "tackles": 0,
+      "interceptions": 3,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_067",
+    "stats": {
+      "player_id": 67,
+      "minutes_played": 90,
+      "pass_accuracy": 43.0,
+      "shots": 7,
+      "goals": 2,
+      "tackles": 4,
+      "interceptions": 1,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_068",
+    "stats": {
+      "player_id": 68,
+      "minutes_played": 90,
+      "pass_accuracy": 31.5,
+      "shots": 3,
+      "goals": 3,
+      "tackles": 5,
+      "interceptions": 2,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_069",
+    "stats": {
+      "player_id": 69,
+      "minutes_played": 90,
+      "pass_accuracy": 92.8,
+      "shots": 4,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 3,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_070",
+    "stats": {
+      "player_id": 70,
+      "minutes_played": 90,
+      "pass_accuracy": 93.8,
+      "shots": 8,
+      "goals": 2,
+      "tackles": 0,
+      "interceptions": 0,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_071",
+    "stats": {
+      "player_id": 71,
+      "minutes_played": 90,
+      "pass_accuracy": 41.6,
+      "shots": 4,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 4,
+      "duels_won": 6
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_072",
+    "stats": {
+      "player_id": 72,
+      "minutes_played": 90,
+      "pass_accuracy": 52.5,
+      "shots": 12,
+      "goals": 2,
+      "tackles": 6,
+      "interceptions": 4,
+      "duels_won": 8
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_073",
+    "stats": {
+      "player_id": 73,
+      "minutes_played": 90,
+      "pass_accuracy": 37.5,
+      "shots": 9,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_074",
+    "stats": {
+      "player_id": 74,
+      "minutes_played": 90,
+      "pass_accuracy": 30.1,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 5,
+      "interceptions": 3,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_075",
+    "stats": {
+      "player_id": 75,
+      "minutes_played": 90,
+      "pass_accuracy": 91.7,
+      "shots": 5,
+      "goals": 2,
+      "tackles": 1,
+      "interceptions": 5,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_076",
+    "stats": {
+      "player_id": 76,
+      "minutes_played": 90,
+      "pass_accuracy": 63.0,
+      "shots": 10,
+      "goals": 3,
+      "tackles": 5,
+      "interceptions": 3,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_077",
+    "stats": {
+      "player_id": 77,
+      "minutes_played": 90,
+      "pass_accuracy": 66.0,
+      "shots": 3,
+      "goals": 3,
+      "tackles": 6,
+      "interceptions": 5,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_078",
+    "stats": {
+      "player_id": 78,
+      "minutes_played": 90,
+      "pass_accuracy": 70.0,
+      "shots": 4,
+      "goals": 3,
+      "tackles": 8,
+      "interceptions": 0,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_079",
+    "stats": {
+      "player_id": 79,
+      "minutes_played": 90,
+      "pass_accuracy": 48.6,
+      "shots": 6,
+      "goals": 2,
+      "tackles": 7,
+      "interceptions": 3,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_080",
+    "stats": {
+      "player_id": 80,
+      "minutes_played": 90,
+      "pass_accuracy": 73.9,
+      "shots": 8,
+      "goals": 3,
+      "tackles": 2,
+      "interceptions": 5,
+      "duels_won": 1
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_081",
+    "stats": {
+      "player_id": 81,
+      "minutes_played": 90,
+      "pass_accuracy": 48.4,
+      "shots": 10,
+      "goals": 2,
+      "tackles": 1,
+      "interceptions": 1,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_082",
+    "stats": {
+      "player_id": 82,
+      "minutes_played": 90,
+      "pass_accuracy": 50.2,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 2,
+      "interceptions": 0,
+      "duels_won": 0
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_083",
+    "stats": {
+      "player_id": 83,
+      "minutes_played": 90,
+      "pass_accuracy": 45.9,
+      "shots": 7,
+      "goals": 0,
+      "tackles": 7,
+      "interceptions": 3,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_084",
+    "stats": {
+      "player_id": 84,
+      "minutes_played": 90,
+      "pass_accuracy": 67.4,
+      "shots": 11,
+      "goals": 3,
+      "tackles": 7,
+      "interceptions": 3,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_085",
+    "stats": {
+      "player_id": 85,
+      "minutes_played": 90,
+      "pass_accuracy": 39.6,
+      "shots": 11,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 3,
+      "duels_won": 3
+    },
+    "expected_decision": "reject"
+  },
+  {
+    "case_id": "case_086",
+    "stats": {
+      "player_id": 86,
+      "minutes_played": 90,
+      "pass_accuracy": 41.4,
+      "shots": 11,
+      "goals": 3,
+      "tackles": 0,
+      "interceptions": 4,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_087",
+    "stats": {
+      "player_id": 87,
+      "minutes_played": 90,
+      "pass_accuracy": 89.6,
+      "shots": 1,
+      "goals": 1,
+      "tackles": 2,
+      "interceptions": 3,
+      "duels_won": 10
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_088",
+    "stats": {
+      "player_id": 88,
+      "minutes_played": 90,
+      "pass_accuracy": 64.5,
+      "shots": 8,
+      "goals": 2,
+      "tackles": 7,
+      "interceptions": 4,
+      "duels_won": 8
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_089",
+    "stats": {
+      "player_id": 89,
+      "minutes_played": 90,
+      "pass_accuracy": 57.7,
+      "shots": 8,
+      "goals": 3,
+      "tackles": 2,
+      "interceptions": 5,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_090",
+    "stats": {
+      "player_id": 90,
+      "minutes_played": 90,
+      "pass_accuracy": 59.3,
+      "shots": 12,
+      "goals": 1,
+      "tackles": 4,
+      "interceptions": 4,
+      "duels_won": 7
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_091",
+    "stats": {
+      "player_id": 91,
+      "minutes_played": 90,
+      "pass_accuracy": 70.7,
+      "shots": 4,
+      "goals": 3,
+      "tackles": 1,
+      "interceptions": 5,
+      "duels_won": 4
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_092",
+    "stats": {
+      "player_id": 92,
+      "minutes_played": 90,
+      "pass_accuracy": 45.2,
+      "shots": 5,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 0,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_093",
+    "stats": {
+      "player_id": 93,
+      "minutes_played": 90,
+      "pass_accuracy": 39.8,
+      "shots": 6,
+      "goals": 1,
+      "tackles": 3,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_094",
+    "stats": {
+      "player_id": 94,
+      "minutes_played": 90,
+      "pass_accuracy": 56.5,
+      "shots": 8,
+      "goals": 3,
+      "tackles": 6,
+      "interceptions": 0,
+      "duels_won": 3
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_095",
+    "stats": {
+      "player_id": 95,
+      "minutes_played": 90,
+      "pass_accuracy": 84.1,
+      "shots": 6,
+      "goals": 0,
+      "tackles": 6,
+      "interceptions": 3,
+      "duels_won": 0
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_096",
+    "stats": {
+      "player_id": 96,
+      "minutes_played": 90,
+      "pass_accuracy": 91.3,
+      "shots": 4,
+      "goals": 3,
+      "tackles": 6,
+      "interceptions": 4,
+      "duels_won": 8
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_097",
+    "stats": {
+      "player_id": 97,
+      "minutes_played": 90,
+      "pass_accuracy": 82.0,
+      "shots": 3,
+      "goals": 3,
+      "tackles": 3,
+      "interceptions": 2,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_098",
+    "stats": {
+      "player_id": 98,
+      "minutes_played": 90,
+      "pass_accuracy": 61.6,
+      "shots": 6,
+      "goals": 2,
+      "tackles": 6,
+      "interceptions": 5,
+      "duels_won": 2
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_099",
+    "stats": {
+      "player_id": 99,
+      "minutes_played": 90,
+      "pass_accuracy": 84.6,
+      "shots": 2,
+      "goals": 2,
+      "tackles": 8,
+      "interceptions": 0,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  },
+  {
+    "case_id": "case_100",
+    "stats": {
+      "player_id": 100,
+      "minutes_played": 90,
+      "pass_accuracy": 68.5,
+      "shots": 10,
+      "goals": 0,
+      "tackles": 1,
+      "interceptions": 5,
+      "duels_won": 6
+    },
+    "expected_decision": "advance"
+  }
+]
