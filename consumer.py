@@ -2,6 +2,7 @@ import json
 from kafka import KafkaConsumer
 from step2_graph import graph
 from langgraph.types import Command
+from eval_record import EvalRecord, create_eval_record
 
 
 consumer = KafkaConsumer(
@@ -72,10 +73,11 @@ if __name__ == "__main__":
 
         if event_count % 50 == 0:
             snapshot = get_current_snapshot()
+            record = create_eval_record(player_id=snapshot["player_id"], stats=snapshot)
             print("\n--- Evaluating after", event_count, "events ---")
 
-            config = {"configurable": {"thread_id": f"player-{snapshot['player_id']}"}}
-            result = graph.invoke({"stats": snapshot}, config)
+            config = {"configurable": {"thread_id": record.trace_id}}
+            result = graph.invoke(record, config)
 
             if "__interrupt__" in result:
                 print("Manager review needed:", result["__interrupt__"])
