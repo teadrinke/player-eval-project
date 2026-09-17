@@ -4,43 +4,44 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import interrupt, Command
 
 from step1_evaluate import evaluate_player, PlayerEval
+from eval_record import create_eval_record, EvalRecord
 from statsbomb_input import get_player_stats
 
-class GraphState(TypedDict):
-    stats: dict
-    evaluation: Optional[PlayerEval]
-    manager_decision: Optional[str]
-    final_status: Optional[str]
+# class GraphState(TypedDict):
+#     stats: dict
+#     evaluation: Optional[PlayerEval]
+#     manager_decision: Optional[str]
+#     final_status: Optional[str]
 
 
-def evaluate_node(state: GraphState) -> GraphState:
-    result = evaluate_player(state["stats"])
-    state['evaluation']=result
-    return state
+def evaluate_node(record: EvalRecord) -> EvalRecord:
+    result = evaluate_player(record.stats)
+    record.evaluation = result
+    return record
 
-def check_flag_node(state: GraphState) -> GraphState:
-    return state
+def check_flag_node(record: EvalRecord) -> EvalRecord:
+    return record
 
-def route_after_check(state: GraphState) -> str:
-    if state["evaluation"].risk_flag:
+def route_after_check(record: EvalRecord) -> str:
+    if record.evaluation.risk_flag:
         return "await_approval"
     else:
-        state["final_status"]=state["evaluation"].recommendation
+        record.final_status = record.evaluation.recommendation
         return "end"
 
-def await_approval_node(state: GraphState) -> GraphState:
+def await_approval_node(record: EvalRecord) -> EvalRecord:
     decision = interrupt({
         "message" : "Manager review needed",
-        "evaluation" : state["evaluation"].model_dump()
+        "evaluation" : record.evaluation.model_dump()
     })
-    state["manager_decision"] = decision
-    return state
+    record.manager_decision = decision
+    return record
 
-def apply_decision_node(state: GraphState) -> GraphState:
-    state["final_status"] = state["manager_decision"]
-    return state
+def apply_decision_node(record: EvalRecord) -> EvalRecord:
+    record.final_status = record.manager_decision
+    return record
 
-builder = StateGraph(GraphState)
+builder = StateGraph(EvalRecord)
 builder.add_node("evaluate", evaluate_node)
 builder.add_node("check_flag", check_flag_node)
 builder.add_node("await_approval", await_approval_node)
@@ -59,21 +60,19 @@ checkpointer = MemorySaver()
 graph = builder.compile(checkpointer=checkpointer)
 
 if __name__ == "__main__":
-    real_stats = get_player_stats(match_id=7531, player_name="Messi")
-    print("Fetched stats:", real_stats)
-#     fake_stats = {
-#     "player_id": 22, "minutes_played": 90, "pass_accuracy": 75.0,
-#     "shots": 3, "goals": 1, "tackles": 2, "interceptions": 1, "duels_won": 4
-# }
+    fake_stats = {
+        "player_id": 17, "minutes_played": 90, "pass_accuracy": 61.2,
+        "shots": 1, "goals": 0, "tackles": 1, "interceptions": 0, "duels_won": 2
+    }
 
-    config = {"configurable" : {"thread_id": f"player-{real_stats['player_id']}"}}
-    result = graph.invoke({"stats" : real_stats}, config)
+    record = create_eval_record(player_id=17, stats=fake_stats)
+    config = {"configurable": {"thread_id": record.trace_id}}
+
+    result = graph.invoke(record, config)
     print("First run result:", result)
 
     if "__interrupt__" in result:
         print("\n>>> Paused for manager approval <<<")
-        print("Evaluation:", result["__interrupt__"])
         manager_input = input("Enter manager decision (advance/reject): ")
-        # manager_input = "advance"
         result = graph.invoke(Command(resume=manager_input), config)
         print("After manager decision:", result)
