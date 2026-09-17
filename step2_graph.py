@@ -42,7 +42,7 @@ def await_approval_node(record: EvalRecord) -> EvalRecord:
 
 def apply_decision_node(record: EvalRecord) -> EvalRecord:
     record.final_status = record.manager_decision
-    log_step(record.trace_id, record.player_id, "final result",
+    log_step(record.trace_id, record.player_id, "final_result",
               final_status=record.final_status)
     return record
 
